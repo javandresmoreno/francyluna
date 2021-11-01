@@ -63,7 +63,7 @@ a:hover {
 h1 {
   margin: 0;
   font-size: 3.5rem;
-  color: var(--purple);
+  color: var(--red);
 }
 
 h2 {
@@ -104,6 +104,70 @@ p {
 }
 
 /* --------------------------------------------/
+|                  HEADER
+\* -------------------------------------------*/
+
+header {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--primary);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.nav-logo img {
+  padding: 1rem 0;
+}
+
+.nav-items ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-items li img {
+  display: flex;
+  width: auto;
+  height: 2rem;
+}
+
+.nav-items li img:hover {
+  opacity: .5;
+}
+
+.nav-items li {
+  font-size: 1.7em;
+  color: var(--white);
+  margin-right: 2rem;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.nav-items li:hover {
+  color: var(--white-alpha-color);
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-top: 6rem;
+  text-align: center;
+}
+
+/* --------------------------------------------/
 |                  SITE STYLES
 \* -------------------------------------------*/
 
@@ -113,15 +177,45 @@ p {
   padding: 0 2rem;
 }
 
-.logo {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.hero-container {
+  position: relative;
 }
 
 .logo h1 {
   margin-top: 6rem;
   text-align: center;
+}
+
+.slogan {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+  bottom: 0;
+}
+
+.slogan p {
+  text-align: center;
+  font-size: 4.5vw;
+  color: var(--gray-light);
+  text-shadow: 2px 7px 7px rgba(19, 4, 4, 0.4); 
+}
+
+
+/* --------------------------------------------/
+|                  FOOTER
+\* -------------------------------------------*/
+
+footer {
+  /* position: fixed; */
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary);
+}
+
+.footer-contain {
+  padding: 1rem;
+  text-align: center;
+  color: var(--white);
+  font-size: 1.5rem;
 }
