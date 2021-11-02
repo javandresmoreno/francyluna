@@ -201,6 +201,84 @@ header {
   text-shadow: 2px 7px 7px rgba(19, 4, 4, 0.4); 
 }
 
+.btn-primary {
+  background-color: var(--primary);
+  padding: 1rem;
+  color: var(--white);
+  text-transform: uppercase;
+  border-radius: .5rem;
+  letter-spacing: .2rem;
+  font-weight: 800;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+/* Products Styles */
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.product-card {
+  display: grid;
+  justify-content: center;
+  background-color: var(--gray-light);
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0px 2px 20px -2px rgba(0,0,0,0.29);
+}
+
+.product-img-container{
+  background: url(../img/pijama_nina.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.product-img-container-1{
+  background: url(../img/pijama_nino.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.product-img-container-2{
+  background: url(../img/pijama_dama.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.product-img-container-3{
+  background: url(../img/pijama_hombre.png) no-repeat;
+  background-size: cover;
+  object-fit: cover;
+  height: 200px;
+  width: 100%;
+}
+
+.product-img-container-4{
+  background: url(../img/DSC02899_edited.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 200px;
+  width: 300px;
+}
+
+/* Contact styles*/
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+}
 
 /* --------------------------------------------/
 |                  FOOTER
@@ -218,4 +296,68 @@ footer {
   text-align: center;
   color: var(--white);
   font-size: 1.5rem;
+}
+
+
+/* --------------------------------------------/
+|                  UTILS
+\* -------------------------------------------*/
+
+.w-100 {
+  width: 100%;
+}
+
+.pt-20 {
+  padding-top: 2rem;
+}
+
+.pb-60 {
+  padding-bottom: 6rem;
+}
+
+.m-0-auto {
+  margin: 0 auto;
+}
+
+.mt-20 {
+  margin-top: 2rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.purple {
+  color: var(--purple);
+}
+
+/* 
+Esta propiedad le dice al navegador
+que quiero que todos los elementos
+con el atributo ID tengan un scroll
+margin de 4 ex. las unidades ex son 
+para indicar la letra más alta del 
+alfabeto, la cual es la X
+ */
+
+[id] {
+  scroll-margin-top: 24ex;
+}
+
+/* --------------------------------------------/
+|                  MEDIA QUERIES
+\* -------------------------------------------*/
+
+@media screen and (max-width: 768px) {
+  .products-container {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .product-card {
+    margin-top: 2rem;
+  }
 }
